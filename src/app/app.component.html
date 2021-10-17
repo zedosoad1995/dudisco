@@ -1,6 +1,6 @@
-<div>
+<div class="hero">
   <div class="hero-img">
-    <img *ngFor="let img of imgsList" [src]=img>
+    <img @imagesSlideshow *ngFor="let imgSrc of displayImgsList" [src]="displayImgsList[0]">
   </div>
   <div class="title">
     <h1>Dudisco</h1>
